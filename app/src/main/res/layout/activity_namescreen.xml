@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#724cf9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--displays title-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:padding="10dp"
+            android:text="Name yourselves!"
+            android:textColor="#bbf1fa"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <!--displays text to ask for amount of players-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:paddingBottom="5dp"
+            android:text="Amount of players?"
+            android:textColor="#bbf1fa"
+            android:textSize="25dp" />
+        <!--spinner to determine how many players will be participating-->
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <!--player 1 heading-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sevillanaregular"
+                android:paddingTop="20dp"
+                android:text="Player 1:"
+                android:textColor="#bbf1fa"
+                android:textSize="25dp" />
+            <!--displays area to input player 1 name-->
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <!--player 2 heading-->
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sevillanaregular"
+                android:paddingTop="20dp"
+                android:text="Player 2:"
+                android:textColor="#bbf1fa"
+                android:textSize="25dp" />
+            <!--displays area to input player 2 name-->
+            <EditText
+                android:id="@+id/name2"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <!--player 3 heading-->
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sevillanaregular"
+                android:paddingTop="20dp"
+                android:text="Player 3:"
+                android:textColor="#bbf1fa"
+                android:textSize="25dp" />
+            <!--displays area to input player 3 name-->
+            <EditText
+                android:id="@+id/name3"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <!--player 4 heading-->
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sevillanaregular"
+                android:paddingTop="20dp"
+                android:text="Player 4:"
+                android:textColor="#bbf1fa"
+                android:textSize="25dp" />
+            <!--displays area to input player 4 name-->
+            <EditText
+                android:id="@+id/name4"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <!--player 5 heading-->
+            <TextView
+                android:id="@+id/p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sevillanaregular"
+                android:paddingTop="20dp"
+                android:text="Player 5:"
+                android:textColor="#bbf1fa"
+                android:textSize="25dp" />
+            <!--displays area to input player 5 name-->
+            <EditText
+                android:id="@+id/name5"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!--instructions button, sends them to instructions-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/sevillanaregular"
+            android:onClick="click"
+            android:text="Instructions"
+            android:textAllCaps="false"
+            android:textColor="#bbf1fa"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

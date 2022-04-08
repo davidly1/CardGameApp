@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#724cf9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+        <!--Rhyme out heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:text="Rhyme Out"
+            android:textColor="#bbf1fa"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!--new card button, shows another card upon click-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="pop"
+                android:text="New Card"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+            <!--help button, sends user to instructions screen-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="instructions"
+                android:text="Help"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <!--displays the first clue-->
+        <TextView
+            android:id="@+id/clue1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sevillanaregular"
+            android:text="Clue 1 will appear here."
+            android:textAlignment="center"
+            android:textColor="#bbf1fa"
+            android:textSize="18dp" />
+        <!--displays the second clue-->
+        <TextView
+            android:id="@+id/clue2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:text="Clue 2 will appear here."
+            android:textAlignment="center"
+            android:textColor="#bbf1fa"
+            android:textSize="18dp" />
+        <!--displays the third clue-->
+        <TextView
+            android:id="@+id/clue3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:text="Clue 3 will appear here."
+            android:textAlignment="center"
+            android:textColor="#bbf1fa"
+            android:textSize="18dp" />
+        <!--displays the hint-->
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:text="Hint will appear here."
+            android:textAlignment="center"
+            android:textColor="#bbf1fa"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!--button to reveal answer-->
+            <Button
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="answerclick"
+                android:text="Answer"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+            <!--button to shuffle the card-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="reset"
+                android:text="Reset"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!--player 1's score button-->
+            <Button
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="p1click"
+                android:text="Player 1: 0"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+            <!--player 2's score button-->
+            <Button
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="p2click"
+                android:text="Player 2: 0"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!--player 3's score button-->
+            <Button
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="p3click"
+                android:text="Player 3: 0"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+            <!--player 4's score button-->
+            <Button
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mybutton"
+                android:fontFamily="@font/sevillanaregular"
+                android:onClick="p4click"
+                android:text="Player 4: 0"
+                android:textAllCaps="false"
+                android:textColor="#bbf1fa"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+        <!--player 5's score button-->
+        <Button
+            android:id="@+id/p5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/sevillanaregular"
+            android:onClick="p5click"
+            android:text="Player 5: 0"
+            android:textAllCaps="false"
+            android:textColor="#bbf1fa"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

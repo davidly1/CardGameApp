@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#724cf9">
+
+    <!--displays Rhyme out text-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/sevillanaregular"
+        android:text="Rhyme Out"
+        android:textColor="#bbf1fa"
+        android:textSize="50dp" />
+    <!--displays the music note image-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/m" />
+    <!--displays button that sends user to name screen-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/sevillanaregular"
+        android:onClick="gonext"
+        android:text="Play!"
+        android:textAllCaps="false"
+        android:textColor="#bbf1fa"
+        android:textSize="20dp" />
+</RelativeLayout>

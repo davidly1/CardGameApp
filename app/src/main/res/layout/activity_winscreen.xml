@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#724cf9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--displays congratulations heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:padding="10dp"
+            android:text="Congratulations!"
+            android:textColor="#bbf1fa"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+        <!--will display the winning players name upon entering screen-->
+        <TextView
+            android:id="@+id/haswon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#bbf1fa"
+            android:textSize="30dp" />
+        <!--displays award pic-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="5dp"
+            android:src="@drawable/win" />
+
+        <!--displays winning text-->
+        <TextView
+            android:id="@+id/wintext"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/sevillanaregular"
+            android:paddingTop="50dp"
+            android:text="Congratulations to Player 1 for winning the game of Rhyme Out! Click to play again."
+            android:textColor="#bbf1fa"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--button to send user to game screen if they wish to play again-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="435dp"
+        android:background="@drawable/mybutton"
+        android:fontFamily="@font/sevillanaregular"
+        android:onClick="click"
+        android:text="Play again!"
+        android:textAllCaps="false"
+        android:textColor="#bbf1fa"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>
