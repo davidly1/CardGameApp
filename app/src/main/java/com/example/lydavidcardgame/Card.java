@@ -2,7 +2,6 @@ package com.example.lydavidcardgame;
 
 //Name: David Ly
 //Date: January 29, 2021
-//Purpose: Unit 7 Project - Card Game
 
 public class Card {
     private int picnum;
